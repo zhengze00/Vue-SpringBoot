@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import PageHome from '@/views/PageHome.vue'
 import BoardList from '@/views/board/BoardList.vue'
+import ComponentPage from '@/views/componentpage/ComponentPage.vue'
+
 
 const routes = [
     {
@@ -20,8 +22,12 @@ const routes = [
         path: '/board/list',
         name: 'BoardList',
         component: BoardList
+    },
+    {
+        path: '/componentpage/component',
+        name: 'ComponentPage',
+        component: ComponentPage
     }
-
 ]
 
 const router = createRouter({
